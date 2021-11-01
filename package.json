@@ -1,0 +1,20 @@
+{
+  "name": "docker-compose-node-postgres",
+  "version": "1.0.0",
+  "description": "Setup Node.js and Postgres with Docker",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run start:dev",
+    "start": "node src/index.js",
+    "start:dev": "nodemon --inspect=0.0.0.0:9229 src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pg": "^7.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
